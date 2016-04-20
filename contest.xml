@@ -20,51 +20,8 @@
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_right" id="60"></block>
+          <block type="movement_reverse" id="213"></block>
         </statement>
-        <next>
-          <block type="controls_repeat" id="84" inline="true">
-            <value name="TIMES">
-              <block type="math_number" id="170">
-                <field name="NUM">20000</field>
-              </block>
-            </value>
-            <statement name="DO">
-              <block type="movement_forward" id="104">
-                <next>
-                  <block type="movement_left" id="114"></block>
-                </next>
-              </block>
-            </statement>
-            <next>
-              <block type="controls_repeat" id="130" inline="true">
-                <value name="TIMES">
-                  <block type="math_number" id="177">
-                    <field name="NUM">20000</field>
-                  </block>
-                </value>
-                <statement name="DO">
-                  <block type="movement_reverse" id="146"></block>
-                </statement>
-                <next>
-                  <block type="controls_repeat" id="153" inline="true">
-                    <value name="TIMES">
-                      <block type="math_number" id="184">
-                        <field name="NUM">22000</field>
-                      </block>
-                    </value>
-                    <statement name="DO">
-                      <block type="movement_forward" id="163"></block>
-                    </statement>
-                    <next>
-                      <block type="movement_stop" id="203"></block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
       </block>
     </next>
   </block>
